@@ -1,0 +1,25 @@
+.products_item--sub {
+  color: black; }
+
+.products_item--sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0;
+  font-size: .9rem;
+  padding: 1rem; }
+  .products_item--sub .products_item--info {
+    display: flex;
+    flex-direction: column; }
+    .products_item--sub .products_item--info span:last-child {
+      font-size: .8rem; }
+  .products_item--sub .products_item--add input {
+    display: inline-block;
+    width: 40%;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    font-size: .9rem;
+    border-radius: 0; }
+  .products_item--sub .products_item--add .btn {
+    width: 2rem; }
+
+/*# sourceMappingURL=ProductItem.css.map */
