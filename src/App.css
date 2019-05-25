@@ -27,3 +27,9 @@
   justify-content: space-between;
   padding: 0 2.5rem 0 1rem;
 }
+
+.images_layout {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}

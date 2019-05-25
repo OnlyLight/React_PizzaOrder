@@ -4,6 +4,9 @@ import { Card, Input, Button } from 'reactstrap';
 
 class ProductItem extends Component {
     render() {
+        let { count } = this.props;
+        if (!count) count = 0;
+
         return (
             <Card className="products_item--sub">
                 <div className="products_item--info">
@@ -13,7 +16,7 @@ class ProductItem extends Component {
 
                 <div className="products_item--add">
                     <Button color="danger">-</Button>
-                    <Input type="number"/>
+                    <Input type="number" value={count}/>
                     <Button color="success">+</Button>
                 </div>
             </Card>
