@@ -44,10 +44,11 @@ class ImageItem extends Component {
 
     render() {
         const { id } = this.props;
-        this.getImage(id);
+        if (id)
+            this.getImage(id);
 
         return (
-            <div className="img-thumbnail">
+            <div className="img-thumbnail col-lg-4">
                 <img className="img-fluid" src={this.url} alt="pizza"/>
             </div>
         );
