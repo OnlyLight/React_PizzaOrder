@@ -10,7 +10,7 @@ class ListImage extends Component {
                 <div className="images_layout row">
                     {
                         selected.map(item =>
-                            <ImageItem key={item.id} id={item.id} />)
+                            <ImageItem key={item.id} item={item} />)
                     }
                 </div>
             );

@@ -43,15 +43,19 @@ class ImageItem extends Component {
     }
 
     render() {
-        const { id } = this.props;
-        if (id)
-            this.getImage(id);
+        const { item } = this.props;
+        if (item.id)
+            this.getImage(item.id);
 
-        return (
-            <div className="img-thumbnail col-lg-4">
-                <img className="img-fluid" src={this.url} alt="pizza"/>
-            </div>
-        );
+        if (item.count > 0) {
+            return (
+                <div className="img-thumbnail col-lg-4">
+                    <img className="img-fluid" src={this.url} alt="pizza"/>
+                </div>
+            );
+        } else {
+            return <div></div>;
+        }
     }
 }
 
