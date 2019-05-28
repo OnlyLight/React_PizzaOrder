@@ -1,0 +1,29 @@
+.App-header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.products_item--overview--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h6 {
+    display: inline;
+    font-weight: 700;
+    color: rgba(0,0,0,.5);
+  }
+}
+
+.products_show--info h5 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.products_item--total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2.5rem 0 1rem;
+}
