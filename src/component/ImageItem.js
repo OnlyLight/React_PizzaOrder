@@ -36,9 +36,8 @@ class ImageItem extends Component {
             case 6:
                 this.url = imgSpices;
                 break;
-            case 7:
+            default:
                 this.url = imgVegetables;
-                break;
         }
     }
 
