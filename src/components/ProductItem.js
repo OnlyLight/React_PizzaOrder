@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import './SCSS/ProductItem.css'
 import { Card, Input, Button } from 'reactstrap';
+
+import './SCSS/ProductItem.css'
 
 class ProductItem extends Component {
     onChangeInput(event) {
@@ -20,7 +21,8 @@ class ProductItem extends Component {
 
                 <div className="products_item--add">
                     <Button color="danger" onClick={clickSub}>-</Button>
-                    <Input type="text" value={count} onChange={this.onChangeInput.bind(this)}/>
+                    <Input type="text" value={count}
+                           onChange={this.onChangeInput.bind(this)}/>
                     <Button color="success" onClick={clickAdd}>+</Button>
                 </div>
             </Card>
