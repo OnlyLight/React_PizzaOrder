@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
-import {Badge, Button, Card} from "reactstrap";
 
-import ListImage from "./ListImage";
-import ProductItem from "./ProductItem";
+export const ProductItemContext = React.createContext();
 
-import './SCSS/Layout.css'
-import withLoadLayout from "./withLoadLayout";
-
-const ActiceWithLoadLayoutListImage = withLoadLayout(ListImage);
-const ActiceWithLoadLayoutProductItem = withLoadLayout(ProductItem);
-
-class Layout extends Component {
-    constructor() {
-        super();
+export class ProductItemProvider extends Component {
+    constructor(props) {
+        super(props);
         this.titles = [{id: 1, title: 'Cold cuts', price: 5},
             {id: 2, title: 'Pepperoni', price: 3.5},
             {id: 3, title: 'Feta', price: 2.5},
@@ -123,37 +115,18 @@ class Layout extends Component {
     render() {
         const total = this.totalBill();
         const { itemsSelected } = this.state;
-
         return (
-            <div className="App-header container mt-4">
-                <div className="products_show--info mr-3">
-                    <h5 className="mb-4">Your pizza:</h5>
-                    <ActiceWithLoadLayoutListImage selected={itemsSelected} />
-                </div>
-
-                <div className="products_show--item">
-                    <div className="products_item--overview--info mb-2">
-                        <h6>Your pizza <Badge color="secondary">{total}$</Badge></h6>
-                        <Button onClick={this.onClickReset.bind(this)} color="warning">Reset pizza</Button>
-                    </div>
-                    <div className="products_list">
-                        {
-                            this.loadList().map((item) =>
-                                <ActiceWithLoadLayoutProductItem clickSub={this.onClickSub(item)} clickAdd={this.onClickAdd(item)}
-                                             key={item.id} title={item.title} price={item.price} count={item.count} />)
-                        }
-                    </div>
-                    <Card className="products_item--total pt-3">
-                        <p>Total</p>
-                        <p>{total}$</p>
-                    </Card>
-                    <Card className="products_item--total p-3">
-                        <Button color="primary" onClick={this.onClickCheckout.bind(this)}>Checkout</Button>
-                    </Card>
-                </div>
-            </div>
+            <ProductItemContext.Provider value={{
+                list: this.loadList(),
+                total: total,
+                itemsSelected: itemsSelected,
+                onClickSub: this.onClickSub.bind(this),
+                onClickAdd: this.onClickAdd.bind(this),
+                onClickReset: this.onClickReset.bind(this),
+                onClickCheckout: this.onClickCheckout.bind(this)
+            }}>
+                {this.props.children}
+            </ProductItemContext.Provider>
         );
     }
 }
-
-export default Layout;
