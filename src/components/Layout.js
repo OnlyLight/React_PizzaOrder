@@ -11,7 +11,7 @@ import './SCSS/Layout.css'
 const ActiceWithLoadLayoutListImage = withLoadLayout(ListImage);
 const ActiceWithLoadLayoutProductItem = withLoadLayout(ProductItem);
 
-export default function () {
+export const Layout = () => {
     const { list, total,
         itemsSelected, onClickSub,
         onClickAdd, onClickReset, onClickCheckout } = useContext(ProductItemContext);
@@ -33,8 +33,8 @@ export default function () {
                     {
                         list.map((item) =>
                             <ActiceWithLoadLayoutProductItem
-                                clickSub={onClickSub(item)}
-                                clickAdd={onClickAdd(item)}
+                                clickSub={() => onClickSub(item)}
+                                clickAdd={() => onClickAdd(item)}
                                 key={item.id}
                                 title={item.title}
                                 price={item.price}
@@ -52,4 +52,4 @@ export default function () {
             </div>
         </div>
     );
-}
+};
