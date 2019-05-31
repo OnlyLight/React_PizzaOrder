@@ -4,21 +4,11 @@ import { connect } from 'react-redux';
 import { clickAdd, clickSub, clickReset, clickCheckout } from '../redux/action'
 import { ProductItemContext } from "./ProductItemContext";
 
-class ProductItemProvider extends Component {
-    constructor(props) {
-        super(props);
-        this.titles = [{id: 1, title: 'Cold cuts', price: 5},
-            {id: 2, title: 'Pepperoni', price: 3.5},
-            {id: 3, title: 'Feta', price: 2.5},
-            {id: 4, title: 'Mozzarella', price: 1.5},
-            {id: 5, title: 'Swiss cheese', price: 3},
-            {id: 6, title: 'Spices', price: 0.5},
-            {id: 7, title: 'Vegetables', price: 1.25}];
-    }
+let totalBill = 0;
 
+class ProductItemProvider extends Component {
     loadList() {
-        const { titles } = this;
-        const { itemsSelected } = this.props;
+        const { titles, itemsSelected } = this.props;
         var arr = [];
 
         for (var title of titles) {
@@ -39,8 +29,7 @@ class ProductItemProvider extends Component {
     }
 
     totalBill() {
-        const { titles } = this;
-        const { itemsSelected } = this.props;
+        const { titles, itemsSelected } = this.props;
         let total = 0;
 
         for (var title of titles) {
@@ -55,6 +44,7 @@ class ProductItemProvider extends Component {
 
     render() {
         const total = this.totalBill();
+        totalBill = total;
         const { itemsSelected, onClickSub, onClickAdd, onClickReset, onClickCheckout } = this.props;
         return (
             <ProductItemContext.Provider value={{
@@ -74,14 +64,14 @@ class ProductItemProvider extends Component {
 
 function mapStateToProps(state) {
     return {
+        titles: state.titles,
         itemsSelected: state.itemsSelected
     };
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch, ownProps) {
     return {
         onClickSub: (item) => {
-            console.log(item);
             dispatch(clickSub(item));
         },
         onClickAdd: (item) => {
@@ -91,8 +81,7 @@ function mapDispatchToProps(dispatch) {
             dispatch(clickReset());
         },
         onClickCheckout: () => {
-            const total = this.totalBill();
-            dispatch(clickCheckout(total));
+            dispatch(clickCheckout(totalBill));
         }
     };
 }
