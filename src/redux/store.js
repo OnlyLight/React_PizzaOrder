@@ -1,6 +1,12 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { createLogger } from 'redux-logger'
 
-import { click } from './reducers'
+import { pizzaApp } from './reducers'
 
-export const store = createStore(click);
+const logger = createLogger();
+
+export const store = createStore(
+    pizzaApp,
+    applyMiddleware(logger)
+);
 

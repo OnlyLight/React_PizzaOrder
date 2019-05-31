@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3868f7c-6873-48c6-9cdd-25648c678b81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ResultComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/ProductItemProvider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/initActions/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/initActions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/ProductItemContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/ProductItemContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/initReducers/eventClick.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/initReducers/eventClick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,25 +65,26 @@
     <session id="2048418693">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="6" />
+          <entry key="ESLintLanguageService" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="31" />
           <entry key="html" value="12" />
-          <entry key="js" value="7338" />
+          <entry key="js" value="7840" />
           <entry key="scss" value="13" />
         </counts>
       </usages-collector>
@@ -94,7 +92,7 @@
         <counts>
           <entry key="CSS" value="31" />
           <entry key="HTML" value="12" />
-          <entry key="JavaScript" value="7338" />
+          <entry key="JavaScript" value="7840" />
           <entry key="SCSS" value="13" />
         </counts>
       </usages-collector>
@@ -102,7 +100,7 @@
         <counts>
           <entry key="css" value="10" />
           <entry key="html" value="1" />
-          <entry key="js" value="114" />
+          <entry key="js" value="147" />
           <entry key="json" value="2" />
           <entry key="scss" value="5" />
         </counts>
@@ -112,7 +110,7 @@
           <entry key="CSS" value="10" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="114" />
+          <entry key="JavaScript" value="147" />
           <entry key="SCSS" value="5" />
         </counts>
       </usages-collector>
@@ -120,56 +118,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/contexts/ProductItemProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/reducers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/action.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -177,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -228,16 +181,22 @@
         <option value="$PROJECT_DIR$/src/components/ProductItemProvider.js" />
         <option value="$PROJECT_DIR$/src/components/LayoutItem.js" />
         <option value="$PROJECT_DIR$/src/redux/Store.js" />
-        <option value="$PROJECT_DIR$/src/redux/action.js" />
         <option value="$PROJECT_DIR$/src/components/LayoutWithRedux.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/contexts/ProductItemContext.js" />
         <option value="$PROJECT_DIR$/src/contexts/asdf.js" />
-        <option value="$PROJECT_DIR$/src/redux/store.js" />
         <option value="$PROJECT_DIR$/src/components/ResultComponent.js" />
-        <option value="$PROJECT_DIR$/src/redux/reducers.js" />
-        <option value="$PROJECT_DIR$/src/contexts/ProductItemProvider.js" />
         <option value="$PROJECT_DIR$/src/components/Layout.js" />
+        <option value="$PROJECT_DIR$/src/components/withLoadLayout.js" />
+        <option value="$PROJECT_DIR$/src/redux/eventClick.js" />
+        <option value="$PROJECT_DIR$/src/redux/initReducers/titles.js" />
+        <option value="$PROJECT_DIR$/src/contexts/ProductItemProvider.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers.js" />
+        <option value="$PROJECT_DIR$/src/redux/initActions/types.js" />
+        <option value="$PROJECT_DIR$/src/redux/initActions/events.js" />
+        <option value="$PROJECT_DIR$/src/redux/action.js" />
+        <option value="$PROJECT_DIR$/src/redux/initReducers/eventClick.js" />
+        <option value="$PROJECT_DIR$/src/redux/store.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -319,6 +278,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/initReducers" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -355,11 +315,12 @@
       <workItem from="1559009736712" duration="3592000" />
       <workItem from="1559112972223" duration="8672000" />
       <workItem from="1559181221394" duration="15993000" />
+      <workItem from="1559269549359" duration="5320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78251000" />
+    <option name="totallyTimeSpent" value="85578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1325" height="743" extended-state="6" />
@@ -384,6 +345,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.24961598" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.50121653" side_tool="true" weight="0.24961598" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32789558" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952693" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -501,20 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/withLoadLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LayoutWithRedux.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LayoutWithRedux.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ProductItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -525,61 +493,62 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contexts/ProductItemContext.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResultComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/withLoadLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/initActions/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/initActions/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/initReducers/eventClick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/initReducers/titles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        <state relative-caret-position="525">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -588,8 +557,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contexts/ProductItemProvider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="25" />
+        <state relative-caret-position="-435">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
