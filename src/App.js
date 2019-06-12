@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import { Provider } from 'react-redux'
-import './App.css';
+import { Provider } from 'react-redux';
 
-import ResultComponent from './components/ResultComponent'
-import { store } from './redux/store'
+import ResultComponent from './components/ResultComponent';
+import { configureStore } from './redux/store';
+
+const store = configureStore();
 
 class App extends Component {
     render() {
